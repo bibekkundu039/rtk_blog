@@ -5,6 +5,7 @@ import "./App.css";
 import PostLists from "./features/posts/PostLists";
 import UserLists from "./features/users/UserLists";
 import SinglePostPage from "./features/posts/SinglePostPage";
+import SingleUserPage from "./features/users/SingleUserPage";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/posts/:postId",
         element: <SinglePostPage />,
+      },
+      {
+        path: "/users/:userId",
+        element: <SingleUserPage />,
       },
     ],
   },
